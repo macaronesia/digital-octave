@@ -1,0 +1,27 @@
+{
+  "name": "digital-octave",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "electron-builder install-app-deps && cross-env NODE_ENV=production webpack -p && mkdirp app/node_modules",
+    "start": "electron ./app/main.min.js",
+    "package": "electron-builder build --config ./build-assets/electron-builder.yml"
+  },
+  "dependencies": {
+    "simple-pitch": "file:./addons/simple-pitch"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.2.0",
+    "electron": "7.1.9",
+    "electron-builder": "^21.2.0",
+    "mkdirp": "^1.0.3",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}

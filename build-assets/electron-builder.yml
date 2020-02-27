@@ -1,0 +1,21 @@
+appId: com.octave.digital
+productName: DigitalOctave
+directories:
+  buildResources: build
+  output: dist
+  app: app
+asar: false
+mac:
+  category: Utilities
+  target:
+    - default
+win:
+  target:
+    - nsis
+    - msi
+linux:
+  target:
+    - AppImage
+    - deb
+    - rpm
+  category: Utility

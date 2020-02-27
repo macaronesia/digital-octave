@@ -1,0 +1,16 @@
+{
+  "name": "digital-octave",
+  "version": "1.0.0",
+  "description": "Simple musical keyboard",
+  "homepage": "https://digital.octave.com",
+  "license": "MIT",
+  "author": {
+    "name" : "Digital Octave Maintainers",
+    "email": "maintainers@digital.octave.com"
+  },
+  "main": "main.min.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {}
+}
